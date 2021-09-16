@@ -1,10 +1,25 @@
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/mercadolivro?createDatabaseIfNotExist=true
+#    username: root
+#    password: guigui775
+#  jackson:
+#    default-property-inclusion: non_null
+
 spring:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
+  show-sql: false
+  properties:
+    hibernate:
+      format_sql: false
   datasource:
-    url: jdbc:mysql://localhost:3306/mercadolivro?createDatabaseIfNotExist=true
-    username: root
-    password: guigui775
+    url: jdbc:mysql://g23ty7b8l3gjugpd:xg2wgbvnp67m9qb0@nnsgluut5mye50or.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/b2w0gg5vg81y4q1t?reconnect=true/mercadolivro?createDatabaseIfNotExist=true
+    username: g23ty7b8l3gjugpd
+    password: xg2wgbvnp67m9qb0
   jackson:
     default-property-inclusion: non_null
